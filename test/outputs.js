@@ -27,7 +27,7 @@ test('file outputs', function (t) {
     var w = fs.createWriteStream(path.join(tmpdir, 'common.js'));
     b.bundle().pipe(w);
     
-    w.on('finish', function () {
+    w.on('finish', function () { setTimeout(function () {
         var common = fs.readFileSync(tmpdir + '/common.js', 'utf8');
         var x = fs.readFileSync(tmpdir + '/x.js', 'utf8');
         var y = fs.readFileSync(tmpdir + '/y.js', 'utf8');
@@ -39,7 +39,7 @@ test('file outputs', function (t) {
         vm.runInNewContext(common + y, { console: { log: function (msg) {
             t.equal(msg, 333);
         } } });
-    });
+    }, 100); });
 });
 
 test('stream outputs', function (t) {

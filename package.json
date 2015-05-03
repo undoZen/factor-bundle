@@ -5,9 +5,9 @@
   "main": "index.js",
   "bin": "bin/cmd.js",
   "dependencies": {
-    "JSONStream": "~0.8.4",
-    "browser-pack": "^3.1.1",
-    "defined": "0.0.0",
+    "JSONStream": "^0.10.0",
+    "browser-pack": "^4.0.2",
+    "defined": "1.0.0",
     "deps-topo-sort": "~0.2.1",
     "inherits": "^2.0.1",
     "isarray": "0.0.1",
@@ -22,12 +22,12 @@
   },
   "devDependencies": {
     "browser-unpack": "~0.2.0",
-    "browserify": "^5.11.0",
+    "browserify": "^10.0.0",
     "concat-stream": "^1.4.6",
     "mkdirp": "~0.5.0",
-    "module-deps": "^2.1.0",
+    "module-deps": "^3.7.8",
     "osenv": "^0.1.0",
-    "tape": "^2.13.0",
+    "tape": "^2.14.0",
     "through": "^2.3.4"
   },
   "scripts": {
