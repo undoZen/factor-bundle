@@ -1,5 +1,5 @@
 {
-  "name": "factor-bundle",
+  "name": "uz-factor-bundle",
   "version": "2.4.0",
   "description": "factor browser-pack bundles into common shared bundles",
   "main": "index.js",
@@ -35,9 +35,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/substack/factor-bundle.git"
+    "url": "git://github.com/undoZen/factor-bundle.git"
   },
-  "homepage": "https://github.com/substack/factor-bundle",
+  "homepage": "https://github.com/undoZen/factor-bundle",
   "keywords": [
     "browserify",
     "browserify-tool",
@@ -46,9 +46,9 @@
     "browser-pack"
   ],
   "author": {
-    "name": "James Halliday",
-    "email": "mail@substack.net",
-    "url": "http://substack.net"
+    "name": "undoZen",
+    "email": "opensource@undozen.net",
+    "url": "http://www.undozen.com"
   },
   "license": "MIT"
 }
