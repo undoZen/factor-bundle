@@ -183,11 +183,13 @@ Factor.prototype._transform = function (row, enc, next) {
             self._ensureCommon[row.deps[k]] = true;
         });
         self.push(row);
-        self._streams[id].push(xtend(row, {
-            id: '__',
-            source: 'arguments[4][' + JSON.stringify(row.id) + '][0].apply(exports,arguments)',
-            nomap: true
-        }));}
+        if (s) {
+            s.push(xtend(row, {
+                id: '__',
+                source: 'arguments[4][' + JSON.stringify(row.id) + '][0].apply(exports,arguments)',
+                nomap: true
+            }));}
+        }
     else {
         groups.forEach(function (id) {
             self._streams[id].push(row);
